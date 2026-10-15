@@ -1,0 +1,101 @@
+.site {
+    padding: 0 50px;
+    background-color:#0A0A0A;
+}
+.top {
+    display: flex;
+    background-color:#0A0A0A;
+
+}
+.logo-group {
+    display: flex;
+}
+.title{
+    color:white;
+    white-space: nowrap;
+    font-size: 25px;
+}
+.add-goal-btn {
+    margin-left: auto;
+    background-color: #FF4F13;
+    color:#0A0A0A;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 50px;
+    font-size: 20px;
+
+    transition: all 0.3s ease;
+}
+/* Коли мишку навели на кнопку, міняємо її колір */
+.add-goal-btn:hover {
+  background-color: #D63F0B; 
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Кажемо плюсику, що він має крутитися ПЛАВНО */
+.add-goal-btn .plus {
+  display: inline-block; /* Це обов'язково, щоб анімація працювала */
+  transition: transform 0.8s ease;
+}
+
+/* Коли мишку навели на кнопку, змушуємо плюс прокрутитися */
+.add-goal-btn:hover .plus {
+  transform: rotate(360deg) scale(1.5); /* Поворот на 360 градусів і легке збільшення */
+  
+}
+.line {
+    border: none;
+    border-top: 1px solid rgb(145, 140, 140);
+}
+.total-statistics{
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+.savings-plate{
+    background-color: #FF4F13;
+    color: white;
+    flex:2;
+    border-radius:15px;
+    padding-left: 20px;
+}
+.active-goals,.goals-complete{
+    background-color:   rgb(40, 38, 38) ;
+    color: white;
+    flex: 1;
+    border-radius:15px;
+    padding-left: 20px;
+}
+
+.plate-text{
+    font-size: 25px;
+}
+
+.plate1-num,.plate2-num,.plate3-num{
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0 0 20px;
+    
+}
+.plate2-num{
+    color: #FF4F13;
+}
+.plate3-num{
+    color: green;
+}
+.monthly-stat{
+    display: flex;
+    background-color: rgb(40, 38, 38);  
+    margin-top: 20px;
+    border-radius: 15px;
+}
+.mdeposit-text{
+    font-size: 25px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+
+
