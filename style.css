@@ -16,6 +16,7 @@
     font-size: 25px;
 }
 .add-goal-btn {
+    display: flex;
     margin-left: auto;
     background-color: #FF4F13;
     color:#0A0A0A;
@@ -23,6 +24,9 @@
     padding: 10px 40px;
     border-radius: 50px;
     font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
 
     transition: all 0.3s ease;
 }
@@ -37,6 +41,7 @@
 .add-goal-btn .plus {
   display: inline-block; /* Це обов'язково, щоб анімація працювала */
   transition: transform 0.8s ease;
+  font-size: 25px;
 }
 
 /* Коли мишку навели на кнопку, змушуємо плюс прокрутитися */
@@ -82,20 +87,56 @@
     color: #FF4F13;
 }
 .plate3-num{
-    color: green;
+    color: rgb(95, 221, 95);
 }
-.monthly-stat{
+.chart{
     display: flex;
+    flex-direction: column;
     background-color: rgb(40, 38, 38);  
     margin-top: 20px;
     border-radius: 15px;
+    padding: 20px;
 }
-.mdeposit-text{
+.monthlyDep-text{
     font-size: 25px;
     color: white;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin: 0;
+   
 }
+.chart-bars{
+    display: flex;
+    flex: 100%;
+    align-items: flex-end;
+    gap: 10px;  
+}
+.bar-column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.bar {
+    margin: 150px 0px 20px 0px;
+    width: 100px;
+    background-color: #FF4F13;
+    border-radius: 6px 6px 0 0;  /* заокруглені тільки верхні кути */
+    
+}
+
+.bar-amount,
+.bar-month {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+.bar-amount{
+    color: lightgrey;
+}
+.bar-month{
+    color: white;
+    margin-bottom: 20px;
+}
+
 
 
 
