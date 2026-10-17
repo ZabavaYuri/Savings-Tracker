@@ -1,10 +1,10 @@
 .site {
     padding: 0 50px;
-    background-color:#0A0A0A;
+    background-color:#121212;
 }
 .top {
     display: flex;
-    background-color:#0A0A0A;
+    background-color:#121212;
 
 }
 .logo-group {
@@ -28,6 +28,7 @@
     justify-content: center;
     gap: 6px;
 
+    cursor:pointer;
     transition: all 0.3s ease;
 }
 /* Коли мишку навели на кнопку, міняємо її колір */
@@ -35,6 +36,7 @@
   background-color: #D63F0B; 
   color: white;
   transform: scale(1.1);
+
 }
 
 /* Кажемо плюсику, що він має крутитися ПЛАВНО */
@@ -136,7 +138,49 @@
     color: white;
     margin-bottom: 20px;
 }
+.goals-theme{
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+.filter-goals{
+    display: flex;
+    margin-top: 50px;
+    align-items: center;
+}
+.filters{
+    margin-left: auto;
+}
+.sort-by{
+    margin-left: 15px;
+}
+.filters,
+.sort-by{
+    display: flex;
+    font-size: 20px;
+    background-color:rgb(40, 38, 38);
+    color: white;
+    border:none;
+    padding: 20px 30px;
+    border-radius: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
 
+    cursor:pointer;
+
+     transition: 0.3s ease;
+
+}
+
+.filters:hover,
+.sort-by:hover{
+    transform: scale(1.1);
+    
+   
+}
 
 
 
