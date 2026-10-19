@@ -1,10 +1,12 @@
 .site {
     padding: 0 50px;
     background-color:#121212;
+    font-family: "Plus Jakarta Sans", sans-serif;
 }
 .top {
     display: flex;
     background-color:#121212;
+    align-items: center;
 
 }
 .logo-group {
@@ -13,7 +15,7 @@
 .title{
     color:white;
     white-space: nowrap;
-    font-size: 25px;
+    font-size: clamp(16px, 1.2vw, 25px);
 }
 .add-goal-btn {
     display: flex;
@@ -21,9 +23,9 @@
     background-color: #FF4F13;
     color:#0A0A0A;
     border: none;
-    padding: 10px 40px;
+    padding: clamp(6px, 1.2vw, 10px) clamp(16px, 1.2vw, 40px);
     border-radius: 50px;
-    font-size: 20px;
+    font-size: clamp(14px, 1.2vw, 20px);
     align-items: center;
     justify-content: center;
     gap: 6px;
@@ -43,7 +45,7 @@
 .add-goal-btn .plus {
   display: inline-block; /* Це обов'язково, щоб анімація працювала */
   transition: transform 0.8s ease;
-  font-size: 25px;
+  font-size: clamp(16px, 1.2vw, 25px);
 }
 
 /* Коли мишку навели на кнопку, змушуємо плюс прокрутитися */
@@ -109,17 +111,20 @@
     display: flex;
     flex: 100%;
     align-items: flex-end;
-    gap: 10px;  
+    gap: 1%;  
+    overflow-x: auto;
+    
 }
 .bar-column{
     display: flex;
     flex-direction: column;
     align-items: center;
     flex: 1;
+    min-width: 70px;
 }
 .bar {
     margin: 150px 0px 20px 0px;
-    width: 100px;
+    width: 100%;
     background-color: #FF4F13;
     border-radius: 6px 6px 0 0;  /* заокруглені тільки верхні кути */
     
@@ -128,7 +133,7 @@
 .bar-amount,
 .bar-month {
     margin: 0;
-    font-size: 18px;
+    font-size: clamp(11px, 1.2vw, 18px);
     font-weight: bold;
 }
 .bar-amount{
@@ -178,8 +183,6 @@
 .filters:hover,
 .sort-by:hover{
     transform: scale(1.1);
-    
-   
 }
 
 
